@@ -1,0 +1,1690 @@
+[
+  {
+    "stop_id": "LIVBULW",
+    "stop_code": 1086,
+    "stop_name": "E LIVINGSTON AVE & BULEN AVE",
+    "stop_desc": "",
+    "stop_lat": 39.948836,
+    "stop_lon": -82.951647
+  },
+  {
+    "stop_id": "HIGRUSN",
+    "stop_code": 1178,
+    "stop_name": "N HIGH ST & E RUSSELL ST",
+    "stop_desc": "",
+    "stop_lat": 39.975825,
+    "stop_lon": -83.003188
+  },
+  {
+    "stop_id": "HIGBUTN",
+    "stop_code": 1179,
+    "stop_name": "N HIGH ST & BUTTLES AVE",
+    "stop_desc": "",
+    "stop_lat": 39.977556,
+    "stop_lon": -83.00353
+  },
+  {
+    "stop_id": "HIG2NDN",
+    "stop_code": 1182,
+    "stop_name": "N HIGH ST & E 2ND AVE",
+    "stop_desc": "",
+    "stop_lat": 39.983318,
+    "stop_lon": -83.004658
+  },
+  {
+    "stop_id": "HIG4THN",
+    "stop_code": 1183,
+    "stop_name": "N HIGH ST & E 4TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.985183,
+    "stop_lon": -83.005031
+  },
+  {
+    "stop_id": "HIG5THN",
+    "stop_code": 1184,
+    "stop_name": "N HIGH ST & E 5TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.987609,
+    "stop_lon": -83.005524
+  },
+  {
+    "stop_id": "HIG6THN",
+    "stop_code": 1185,
+    "stop_name": "N HIGH ST & E 6TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.989174,
+    "stop_lon": -83.005819
+  },
+  {
+    "stop_id": "HIGEUCN",
+    "stop_code": 1186,
+    "stop_name": "N HIGH ST & EUCLID AVE",
+    "stop_desc": "",
+    "stop_lat": 39.991224,
+    "stop_lon": -83.006225
+  },
+  {
+    "stop_id": "HIGCHIN",
+    "stop_code": 1188,
+    "stop_name": "N HIGH ST & CHITTENDEN AVE",
+    "stop_desc": "",
+    "stop_lat": 39.99602,
+    "stop_lon": -83.007178
+  },
+  {
+    "stop_id": "HIG13TN",
+    "stop_code": 1189,
+    "stop_name": "N HIGH ST & E 13TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.997729,
+    "stop_lon": -83.007506
+  },
+  {
+    "stop_id": "HIG15TN",
+    "stop_code": 1190,
+    "stop_name": "N HIGH ST & E 15TH AVE",
+    "stop_desc": "",
+    "stop_lat": 40.000285,
+    "stop_lon": -83.007989
+  },
+  {
+    "stop_id": "HIGWOON",
+    "stop_code": 1192,
+    "stop_name": "N HIGH ST & W WOODRUFF AVE",
+    "stop_desc": "",
+    "stop_lat": 40.003566,
+    "stop_lon": -83.008642
+  },
+  {
+    "stop_id": "HIGSTAS",
+    "stop_code": 1251,
+    "stop_name": "S HIGH ST & W STATE ST",
+    "stop_desc": "",
+    "stop_lat": 39.960285,
+    "stop_lon": -83.000381
+  },
+  {
+    "stop_id": "HIG15TS",
+    "stop_code": 1295,
+    "stop_name": "N HIGH ST & E 15TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.999731,
+    "stop_lon": -83.008093
+  },
+  {
+    "stop_id": "HIG13TS",
+    "stop_code": 1296,
+    "stop_name": "N HIGH ST & E 13TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.998105,
+    "stop_lon": -83.00777
+  },
+  {
+    "stop_id": "HIGCHIS",
+    "stop_code": 1297,
+    "stop_name": "N HIGH ST & CHITTENDEN AVE",
+    "stop_desc": "",
+    "stop_lat": 39.995901,
+    "stop_lon": -83.007325
+  },
+  {
+    "stop_id": "HIG10TS",
+    "stop_code": 1298,
+    "stop_name": "N HIGH ST & W 10TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.993781,
+    "stop_lon": -83.006902
+  },
+  {
+    "stop_id": "HIGKINS",
+    "stop_code": 1300,
+    "stop_name": "N HIGH ST & KING AVE",
+    "stop_desc": "",
+    "stop_lat": 39.990316,
+    "stop_lon": -83.00623
+  },
+  {
+    "stop_id": "HIGCLAS",
+    "stop_code": 1301,
+    "stop_name": "N HIGH ST & CLARK PL",
+    "stop_desc": "",
+    "stop_lat": 39.988966,
+    "stop_lon": -83.005955
+  },
+  {
+    "stop_id": "HIG5THS",
+    "stop_code": 1302,
+    "stop_name": "N HIGH ST & W 5TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.986763,
+    "stop_lon": -83.005527
+  },
+  {
+    "stop_id": "HIG4THS",
+    "stop_code": 1303,
+    "stop_name": "N HIGH ST & W 4TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.98496,
+    "stop_lon": -83.005203
+  },
+  {
+    "stop_id": "HIGSTARS",
+    "stop_code": 1304,
+    "stop_name": "N HIGH ST & W STARR AVE",
+    "stop_desc": "",
+    "stop_lat": 39.983037,
+    "stop_lon": -83.004829
+  },
+  {
+    "stop_id": "HIGPRIS",
+    "stop_code": 1305,
+    "stop_name": "N HIGH ST & PRICE AVE",
+    "stop_desc": "",
+    "stop_lat": 39.980398,
+    "stop_lon": -83.004296
+  },
+  {
+    "stop_id": "HIGHUBS",
+    "stop_code": 1306,
+    "stop_name": "N HIGH ST & W HUBBARD AVE",
+    "stop_desc": "",
+    "stop_lat": 39.978538,
+    "stop_lon": -83.003938
+  },
+  {
+    "stop_id": "HIGBUTS",
+    "stop_code": 1307,
+    "stop_name": "N HIGH ST & BUTTLES AVE",
+    "stop_desc": "",
+    "stop_lat": 39.976915,
+    "stop_lon": -83.003575
+  },
+  {
+    "stop_id": "HIGRUSS",
+    "stop_code": 1308,
+    "stop_name": "N HIGH ST & W RUSSELL ST",
+    "stop_desc": "",
+    "stop_lat": 39.975286,
+    "stop_lon": -83.00323
+  },
+  {
+    "stop_id": "LIVQUAW",
+    "stop_code": 1879,
+    "stop_name": "E LIVINGSTON AVE & QUARRY RIDGE DR",
+    "stop_desc": "",
+    "stop_lat": 39.94309,
+    "stop_lon": -82.840758
+  },
+  {
+    "stop_id": "LIV4THE",
+    "stop_code": 1910,
+    "stop_name": "E LIVINGSTON AVE & S 4TH ST",
+    "stop_desc": "",
+    "stop_lat": 39.952628,
+    "stop_lon": -82.994158
+  },
+  {
+    "stop_id": "LIV6THE",
+    "stop_code": 1911,
+    "stop_name": "E LIVINGSTON AVE & S 6TH ST",
+    "stop_desc": "",
+    "stop_lat": 39.952464,
+    "stop_lon": -82.990578
+  },
+  {
+    "stop_id": "LIVGRANE",
+    "stop_code": 1912,
+    "stop_name": "E LIVINGSTON AVE & S GRANT AVE",
+    "stop_desc": "",
+    "stop_lat": 39.95238,
+    "stop_lon": -82.988663
+  },
+  {
+    "stop_id": "LIVKELW",
+    "stop_code": 1913,
+    "stop_name": "E LIVINGSTON AVE & KELTON AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949246,
+    "stop_lon": -82.959852
+  },
+  {
+    "stop_id": "LIVPARE",
+    "stop_code": 1914,
+    "stop_name": "E LIVINGSTON AVE & PARSONS AVE",
+    "stop_desc": "",
+    "stop_lat": 39.95211,
+    "stop_lon": -82.98277
+  },
+  {
+    "stop_id": "LIVANNE",
+    "stop_code": 1915,
+    "stop_name": "E LIVINGSTON AVE & ANN ST",
+    "stop_desc": "",
+    "stop_lat": 39.951533,
+    "stop_lon": -82.980465
+  },
+  {
+    "stop_id": "LIV18TE",
+    "stop_code": 1916,
+    "stop_name": "E LIVINGSTON AVE & S 18TH ST",
+    "stop_desc": "",
+    "stop_lat": 39.950876,
+    "stop_lon": -82.978123
+  },
+  {
+    "stop_id": "LIVCARE",
+    "stop_code": 1917,
+    "stop_name": "E LIVINGSTON AVE & CARPENTER ST",
+    "stop_desc": "",
+    "stop_lat": 39.949987,
+    "stop_lon": -82.97577
+  },
+  {
+    "stop_id": "LIV22NE",
+    "stop_code": 1918,
+    "stop_name": "E LIVINGSTON AVE & S 22ND ST",
+    "stop_desc": "",
+    "stop_lat": 39.949746,
+    "stop_lon": -82.972636
+  },
+  {
+    "stop_id": "LIVCHAE",
+    "stop_code": 1920,
+    "stop_name": "E LIVINGSTON AVE & S CHAMPION AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949637,
+    "stop_lon": -82.970376
+  },
+  {
+    "stop_id": "LIVWILE",
+    "stop_code": 1921,
+    "stop_name": "E LIVINGSTON AVE & WILSON AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949499,
+    "stop_lon": -82.967531
+  },
+  {
+    "stop_id": "LIVSTUE",
+    "stop_code": 1922,
+    "stop_name": "E LIVINGSTON AVE & STUDER AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949341,
+    "stop_lon": -82.964215
+  },
+  {
+    "stop_id": "LIVKELE",
+    "stop_code": 1925,
+    "stop_name": "E LIVINGSTON AVE & KELTON AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949081,
+    "stop_lon": -82.958999
+  },
+  {
+    "stop_id": "LIVBULE",
+    "stop_code": 1928,
+    "stop_name": "E LIVINGSTON AVE & BULEN AVE",
+    "stop_desc": "",
+    "stop_lat": 39.948717,
+    "stop_lon": -82.951593
+  },
+  {
+    "stop_id": "LIVRHOE",
+    "stop_code": 1929,
+    "stop_name": "E LIVINGSTON AVE & RHOADS AVE",
+    "stop_desc": "",
+    "stop_lat": 39.948615,
+    "stop_lon": -82.94953
+  },
+  {
+    "stop_id": "LIVMEME",
+    "stop_code": 1930,
+    "stop_name": "E LIVINGSTON AVE & MEMORY LN N",
+    "stop_desc": "",
+    "stop_lat": 39.948469,
+    "stop_lon": -82.946794
+  },
+  {
+    "stop_id": "LIVCOLE",
+    "stop_code": 1933,
+    "stop_name": "E LIVINGSTON AVE & COLLEGE AVE",
+    "stop_desc": "",
+    "stop_lat": 39.947926,
+    "stop_lon": -82.936419
+  },
+  {
+    "stop_id": "LIVCASE",
+    "stop_code": 1935,
+    "stop_name": "E LIVINGSTON AVE & S CASSINGHAM RD",
+    "stop_desc": "",
+    "stop_lat": 39.94776,
+    "stop_lon": -82.93288
+  },
+  {
+    "stop_id": "LIVROOE",
+    "stop_code": 1937,
+    "stop_name": "E LIVINGSTON AVE & S ROOSEVELT AVE",
+    "stop_desc": "",
+    "stop_lat": 39.94752,
+    "stop_lon": -82.928506
+  },
+  {
+    "stop_id": "LIVBROE1",
+    "stop_code": 1940,
+    "stop_name": "E LIVINGSTON AVE & BROWNING AVE",
+    "stop_desc": "",
+    "stop_lat": 39.947193,
+    "stop_lon": -82.922477
+  },
+  {
+    "stop_id": "LIVWELE",
+    "stop_code": 1941,
+    "stop_name": "E LIVINGSTON AVE & WELLESLEY RD",
+    "stop_desc": "",
+    "stop_lat": 39.947053,
+    "stop_lon": -82.919713
+  },
+  {
+    "stop_id": "LIVKELE1",
+    "stop_code": 1942,
+    "stop_name": "E LIVINGSTON AVE & S KELLNER RD",
+    "stop_desc": "",
+    "stop_lat": 39.946922,
+    "stop_lon": -82.917413
+  },
+  {
+    "stop_id": "LIVJAME",
+    "stop_code": 1943,
+    "stop_name": "E LIVINGSTON AVE & S JAMES RD",
+    "stop_desc": "",
+    "stop_lat": 39.946781,
+    "stop_lon": -82.914972
+  },
+  {
+    "stop_id": "LIVZETE",
+    "stop_code": 1945,
+    "stop_name": "E LIVINGSTON AVE & ZETTLER RD",
+    "stop_desc": "",
+    "stop_lat": 39.946517,
+    "stop_lon": -82.910144
+  },
+  {
+    "stop_id": "LIVBARE",
+    "stop_code": 1946,
+    "stop_name": "E LIVINGSTON AVE & BARNETT RD",
+    "stop_desc": "",
+    "stop_lat": 39.946312,
+    "stop_lon": -82.906059
+  },
+  {
+    "stop_id": "LIVCUNE",
+    "stop_code": 1947,
+    "stop_name": "E LIVINGSTON AVE & CUNARD RD",
+    "stop_desc": "",
+    "stop_lat": 39.94606,
+    "stop_lon": -82.901894
+  },
+  {
+    "stop_id": "LIVCOUE",
+    "stop_code": 1948,
+    "stop_name": "E LIVINGSTON AVE & COURTRIGHT RD",
+    "stop_desc": "",
+    "stop_lat": 39.945771,
+    "stop_lon": -82.896418
+  },
+  {
+    "stop_id": "LIVBEEE",
+    "stop_code": 1949,
+    "stop_name": "E LIVINGSTON AVE & BEECHWOOD RD",
+    "stop_desc": "",
+    "stop_lat": 39.945653,
+    "stop_lon": -82.894211
+  },
+  {
+    "stop_id": "LIVVILE",
+    "stop_code": 1950,
+    "stop_name": "E LIVINGSTON AVE & VILARDO LN",
+    "stop_desc": "",
+    "stop_lat": 39.945503,
+    "stop_lon": -82.89169
+  },
+  {
+    "stop_id": "LIVYEAE",
+    "stop_code": 1951,
+    "stop_name": "E LIVINGSTON AVE & S YEARLING RD",
+    "stop_desc": "",
+    "stop_lat": 39.94529,
+    "stop_lon": -82.887862
+  },
+  {
+    "stop_id": "LIVBURE",
+    "stop_code": 1952,
+    "stop_name": "E LIVINGSTON AVE & BURLINGTON AVE",
+    "stop_desc": "",
+    "stop_lat": 39.945022,
+    "stop_lon": -82.883296
+  },
+  {
+    "stop_id": "LIVGRAE",
+    "stop_code": 1953,
+    "stop_name": "E LIVINGSTON AVE & GRATTAN RD",
+    "stop_desc": "",
+    "stop_lat": 39.944832,
+    "stop_lon": -82.879774
+  },
+  {
+    "stop_id": "LIVHAME",
+    "stop_code": 1954,
+    "stop_name": "E LIVINGSTON AVE & S HAMILTON RD",
+    "stop_desc": "",
+    "stop_lat": 39.944647,
+    "stop_lon": -82.876709
+  },
+  {
+    "stop_id": "LIVSIME",
+    "stop_code": 1955,
+    "stop_name": "E LIVINGSTON AVE & SIMPSON DR",
+    "stop_desc": "",
+    "stop_lat": 39.944448,
+    "stop_lon": -82.873164
+  },
+  {
+    "stop_id": "LIVSHAE",
+    "stop_code": 1956,
+    "stop_name": "E LIVINGSTON AVE & SHADY LANE RD",
+    "stop_desc": "",
+    "stop_lat": 39.944362,
+    "stop_lon": -82.871636
+  },
+  {
+    "stop_id": "LIVCOUNW",
+    "stop_code": 1970,
+    "stop_name": "E LIVINGSTON AVE & COUNTRY CLUB RD",
+    "stop_desc": "",
+    "stop_lat": 39.944344,
+    "stop_lon": -82.868668
+  },
+  {
+    "stop_id": "LIVSHAW",
+    "stop_code": 1971,
+    "stop_name": "E LIVINGSTON AVE & SHADY LANE RD",
+    "stop_desc": "",
+    "stop_lat": 39.944474,
+    "stop_lon": -82.871041
+  },
+  {
+    "stop_id": "LIVHAMW",
+    "stop_code": 1973,
+    "stop_name": "E LIVINGSTON AVE & S HAMILTON RD",
+    "stop_desc": "",
+    "stop_lat": 39.944898,
+    "stop_lon": -82.878506
+  },
+  {
+    "stop_id": "LIVWESW",
+    "stop_code": 1975,
+    "stop_name": "E LIVINGSTON AVE & WESTPHAL AVE",
+    "stop_desc": "",
+    "stop_lat": 39.945181,
+    "stop_lon": -82.883452
+  },
+  {
+    "stop_id": "LIVYEAW",
+    "stop_code": 1976,
+    "stop_name": "E LIVINGSTON AVE & S YEARLING RD",
+    "stop_desc": "",
+    "stop_lat": 39.945396,
+    "stop_lon": -82.887141
+  },
+  {
+    "stop_id": "LIVELDW",
+    "stop_code": 1977,
+    "stop_name": "E LIVINGSTON AVE & ELDERWOOD AVE",
+    "stop_desc": "",
+    "stop_lat": 39.94565,
+    "stop_lon": -82.891513
+  },
+  {
+    "stop_id": "LIVBEEW",
+    "stop_code": 1978,
+    "stop_name": "E LIVINGSTON AVE & BEECHWOOD RD",
+    "stop_desc": "",
+    "stop_lat": 39.94583,
+    "stop_lon": -82.894819
+  },
+  {
+    "stop_id": "LIVCOURW",
+    "stop_code": 1979,
+    "stop_name": "E LIVINGSTON AVE & COURTRIGHT RD",
+    "stop_desc": "",
+    "stop_lat": 39.945984,
+    "stop_lon": -82.897582
+  },
+  {
+    "stop_id": "LIVRANW",
+    "stop_code": 1980,
+    "stop_name": "E LIVINGSTON AVE & RAND AVE",
+    "stop_desc": "",
+    "stop_lat": 39.946214,
+    "stop_lon": -82.901942
+  },
+  {
+    "stop_id": "LIVBARW",
+    "stop_code": 1983,
+    "stop_name": "E LIVINGSTON AVE & BARNETT RD",
+    "stop_desc": "",
+    "stop_lat": 39.946455,
+    "stop_lon": -82.906055
+  },
+  {
+    "stop_id": "LIVHAMW1",
+    "stop_code": 1984,
+    "stop_name": "E LIVINGSTON AVE & S HAMPTON RD",
+    "stop_desc": "",
+    "stop_lat": 39.946755,
+    "stop_lon": -82.911858
+  },
+  {
+    "stop_id": "LIVJAMW",
+    "stop_code": 1985,
+    "stop_name": "E LIVINGSTON AVE & S JAMES RD",
+    "stop_desc": "",
+    "stop_lat": 39.946932,
+    "stop_lon": -82.915257
+  },
+  {
+    "stop_id": "LIVKENW",
+    "stop_code": 1986,
+    "stop_name": "E LIVINGSTON AVE & KENILWORTH PL",
+    "stop_desc": "",
+    "stop_lat": 39.947098,
+    "stop_lon": -82.918575
+  },
+  {
+    "stop_id": "LIVVERW",
+    "stop_code": 1990,
+    "stop_name": "E LIVINGSTON AVE & VERNON RD",
+    "stop_desc": "",
+    "stop_lat": 39.947688,
+    "stop_lon": -82.929326
+  },
+  {
+    "stop_id": "LIVMONW",
+    "stop_code": 1991,
+    "stop_name": "E LIVINGSTON AVE & MONTROSE AVE",
+    "stop_desc": "",
+    "stop_lat": 39.947838,
+    "stop_lon": -82.932096
+  },
+  {
+    "stop_id": "LIVCOLW",
+    "stop_code": 1994,
+    "stop_name": "E LIVINGSTON AVE & COLLEGE AVE",
+    "stop_desc": "",
+    "stop_lat": 39.948101,
+    "stop_lon": -82.936901
+  },
+  {
+    "stop_id": "LIVMAYW",
+    "stop_code": 1996,
+    "stop_name": "E LIVINGSTON AVE & MAYFIELD PL",
+    "stop_desc": "",
+    "stop_lat": 39.948295,
+    "stop_lon": -82.941002
+  },
+  {
+    "stop_id": "LIVRHOW",
+    "stop_code": 1998,
+    "stop_name": "E LIVINGSTON AVE & RHOADS AVE",
+    "stop_desc": "",
+    "stop_lat": 39.948691,
+    "stop_lon": -82.948918
+  },
+  {
+    "stop_id": "LIVFAIW",
+    "stop_code": 1999,
+    "stop_name": "E LIVINGSTON AVE & FAIRWOOD AVE",
+    "stop_desc": "",
+    "stop_lat": 39.948928,
+    "stop_lon": -82.953394
+  },
+  {
+    "stop_id": "LIVLILW",
+    "stop_code": 2002,
+    "stop_name": "E LIVINGSTON AVE & LILLEY AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949148,
+    "stop_lon": -82.957908
+  },
+  {
+    "stop_id": "LIVLOCW",
+    "stop_code": 2005,
+    "stop_name": "E LIVINGSTON AVE & LOCKBOURNE RD",
+    "stop_desc": "",
+    "stop_lat": 39.949392,
+    "stop_lon": -82.962846
+  },
+  {
+    "stop_id": "LIVWILW",
+    "stop_code": 2006,
+    "stop_name": "E LIVINGSTON AVE & WILSON AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949613,
+    "stop_lon": -82.967516
+  },
+  {
+    "stop_id": "LIVCHAW",
+    "stop_code": 2008,
+    "stop_name": "E LIVINGSTON AVE & S CHAMPION AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949748,
+    "stop_lon": -82.970345
+  },
+  {
+    "stop_id": "LIVOHIW",
+    "stop_code": 2009,
+    "stop_name": "E LIVINGSTON AVE & S OHIO AVE",
+    "stop_desc": "",
+    "stop_lat": 39.949822,
+    "stop_lon": -82.971857
+  },
+  {
+    "stop_id": "LIVANNW",
+    "stop_code": 2012,
+    "stop_name": "E LIVINGSTON AVE & ANN ST",
+    "stop_desc": "",
+    "stop_lat": 39.951749,
+    "stop_lon": -82.980546
+  },
+  {
+    "stop_id": "LIVPARW",
+    "stop_code": 2013,
+    "stop_name": "E LIVINGSTON AVE & PARSONS AVE",
+    "stop_desc": "",
+    "stop_lat": 39.95232,
+    "stop_lon": -82.983164
+  },
+  {
+    "stop_id": "LIVGRANW",
+    "stop_code": 2015,
+    "stop_name": "E LIVINGSTON AVE & S GRANT AVE",
+    "stop_desc": "",
+    "stop_lat": 39.952509,
+    "stop_lon": -82.988757
+  },
+  {
+    "stop_id": "LIVMOHW",
+    "stop_code": 2016,
+    "stop_name": "E LIVINGSTON AVE & MOHAWK ST",
+    "stop_desc": "",
+    "stop_lat": 39.952709,
+    "stop_lon": -82.99312
+  },
+  {
+    "stop_id": "FUL3RDW",
+    "stop_code": 2017,
+    "stop_name": "E FULTON ST & S 3RD ST",
+    "stop_desc": "",
+    "stop_lat": 39.953864,
+    "stop_lon": -82.996165
+  },
+  {
+    "stop_id": "FULHIGW",
+    "stop_code": 2018,
+    "stop_name": "E FULTON ST & S HIGH ST",
+    "stop_desc": "",
+    "stop_lat": 39.953592,
+    "stop_lon": -82.998468
+  },
+  {
+    "stop_id": "EASOFFE",
+    "stop_code": 2292,
+    "stop_name": "EASTGREEN BLVD & OFFICEVIEW PL",
+    "stop_desc": "",
+    "stop_lat": 39.938296,
+    "stop_lon": -82.829369
+  },
+  {
+    "stop_id": "HIGBROS",
+    "stop_code": 2900,
+    "stop_name": "N HIGH ST & W BROAD ST",
+    "stop_desc": "",
+    "stop_lat": 39.962805,
+    "stop_lon": -83.000871
+  },
+  {
+    "stop_id": "LIVNOEE",
+    "stop_code": 3187,
+    "stop_name": "E LIVINGSTON AVE & NOE BIXBY RD",
+    "stop_desc": "",
+    "stop_lat": 39.943321,
+    "stop_lon": -82.853274
+  },
+  {
+    "stop_id": "LIVLONE",
+    "stop_code": 3188,
+    "stop_name": "E LIVINGSTON AVE & LONSDALE RD",
+    "stop_desc": "",
+    "stop_lat": 39.94315,
+    "stop_lon": -82.850289
+  },
+  {
+    "stop_id": "LIVBAIE",
+    "stop_code": 3189,
+    "stop_name": "E LIVINGSTON AVE & BAIRSFORD DR",
+    "stop_desc": "",
+    "stop_lat": 39.943061,
+    "stop_lon": -82.844026
+  },
+  {
+    "stop_id": "LIVWALE",
+    "stop_code": 3190,
+    "stop_name": "E LIVINGSTON AVE & WALNUT HILL BLVD",
+    "stop_desc": "",
+    "stop_lat": 39.942447,
+    "stop_lon": -82.837859
+  },
+  {
+    "stop_id": "LIVSARE",
+    "stop_code": 3191,
+    "stop_name": "E LIVINGSTON AVE & SARANAC DR",
+    "stop_desc": "",
+    "stop_lat": 39.942287,
+    "stop_lon": -82.835388
+  },
+  {
+    "stop_id": "LIVBRIE",
+    "stop_code": 3192,
+    "stop_name": "E LIVINGSTON AVE & BRICE RD",
+    "stop_desc": "",
+    "stop_lat": 39.941991,
+    "stop_lon": -82.830317
+  },
+  {
+    "stop_id": "LIVBAIW",
+    "stop_code": 3217,
+    "stop_name": "E LIVINGSTON AVE & BAIRSFORD DR",
+    "stop_desc": "",
+    "stop_lat": 39.943203,
+    "stop_lon": -82.844267
+  },
+  {
+    "stop_id": "LIVLONW",
+    "stop_code": 3218,
+    "stop_name": "E LIVINGSTON AVE & LONSDALE RD",
+    "stop_desc": "",
+    "stop_lat": 39.943288,
+    "stop_lon": -82.84989
+  },
+  {
+    "stop_id": "LIVNOEW",
+    "stop_code": 3219,
+    "stop_name": "E LIVINGSTON AVE & NOE BIXBY RD",
+    "stop_desc": "",
+    "stop_lat": 39.943522,
+    "stop_lon": -82.85402
+  },
+  {
+    "stop_id": "OLE3368N",
+    "stop_code": 3421,
+    "stop_name": "3368 OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.027669,
+    "stop_lon": -83.027931
+  },
+  {
+    "stop_id": "NORSHAW",
+    "stop_code": 3423,
+    "stop_name": "W NORTH BROADWAY & SHATTUCK AVE",
+    "stop_desc": "",
+    "stop_lat": 40.029258,
+    "stop_lon": -83.042184
+  },
+  {
+    "stop_id": "NORCLEW",
+    "stop_code": 3424,
+    "stop_name": "W NORTH BROADWAY & CLEARVIEW AVE",
+    "stop_desc": "",
+    "stop_lat": 40.028778,
+    "stop_lon": -83.046258
+  },
+  {
+    "stop_id": "KENKENBN",
+    "stop_code": 3426,
+    "stop_name": "KENNY RD & KENBROOK COMMON ST",
+    "stop_desc": "",
+    "stop_lat": 40.030707,
+    "stop_lon": -83.049128
+  },
+  {
+    "stop_id": "KENTREN",
+    "stop_code": 3427,
+    "stop_name": "KENNY RD & TREMONT RD",
+    "stop_desc": "",
+    "stop_lat": 40.032578,
+    "stop_lon": -83.050716
+  },
+  {
+    "stop_id": "KENMILN",
+    "stop_code": 3429,
+    "stop_name": "KENNY RD & MILLCREEK LN",
+    "stop_desc": "",
+    "stop_lat": 40.036443,
+    "stop_lon": -83.050656
+  },
+  {
+    "stop_id": "KENHIGN",
+    "stop_code": 3431,
+    "stop_name": "KENNY RD & HIGHLAND DR",
+    "stop_desc": "",
+    "stop_lat": 40.040346,
+    "stop_lon": -83.050398
+  },
+  {
+    "stop_id": "KENPARN",
+    "stop_code": 3433,
+    "stop_name": "KENNY RD & PARKLEIGH RD",
+    "stop_desc": "",
+    "stop_lat": 40.043286,
+    "stop_lon": -83.050217
+  },
+  {
+    "stop_id": "KENWINN",
+    "stop_code": 3435,
+    "stop_name": "KENNY RD & WINDHAM RD",
+    "stop_desc": "",
+    "stop_lat": 40.046919,
+    "stop_lon": -83.049952
+  },
+  {
+    "stop_id": "KENFOLN",
+    "stop_code": 3437,
+    "stop_name": "KENNY RD & FOLKESTONE RD",
+    "stop_desc": "",
+    "stop_lat": 40.050026,
+    "stop_lon": -83.04971
+  },
+  {
+    "stop_id": "KENMERN",
+    "stop_code": 3439,
+    "stop_name": "KENNY RD & MERRIMAR CIR S",
+    "stop_desc": "",
+    "stop_lat": 40.054178,
+    "stop_lon": -83.049463
+  },
+  {
+    "stop_id": "KENWEYN",
+    "stop_code": 3441,
+    "stop_name": "KENNY RD & WEYBRIDGE RD",
+    "stop_desc": "",
+    "stop_lat": 40.056475,
+    "stop_lon": -83.049345
+  },
+  {
+    "stop_id": "GODLANSE",
+    "stop_code": 3454,
+    "stop_name": "GODOWN RD & LANGLAND DR",
+    "stop_desc": "",
+    "stop_lat": 40.061304,
+    "stop_lon": -83.053138
+  },
+  {
+    "stop_id": "GODCHEE",
+    "stop_code": 3455,
+    "stop_name": "GODOWN RD & CHEVIOT DR",
+    "stop_desc": "",
+    "stop_lat": 40.060213,
+    "stop_lon": -83.051327
+  },
+  {
+    "stop_id": "KENWEYS",
+    "stop_code": 3472,
+    "stop_name": "KENNY RD & WEYBRIDGE RD",
+    "stop_desc": "",
+    "stop_lat": 40.05667,
+    "stop_lon": -83.04947
+  },
+  {
+    "stop_id": "KENMERS",
+    "stop_code": 3474,
+    "stop_name": "KENNY RD & MERRIMAR CIR N",
+    "stop_desc": "",
+    "stop_lat": 40.054042,
+    "stop_lon": -83.049669
+  },
+  {
+    "stop_id": "KENFOLS",
+    "stop_code": 3476,
+    "stop_name": "KENNY RD & FOLKESTONE RD",
+    "stop_desc": "",
+    "stop_lat": 40.050478,
+    "stop_lon": -83.049884
+  },
+  {
+    "stop_id": "KENWINS",
+    "stop_code": 3478,
+    "stop_name": "KENNY RD & WINDHAM RD",
+    "stop_desc": "",
+    "stop_lat": 40.046527,
+    "stop_lon": -83.050149
+  },
+  {
+    "stop_id": "KENPARS",
+    "stop_code": 3480,
+    "stop_name": "KENNY RD & PARKLEIGH RD",
+    "stop_desc": "",
+    "stop_lat": 40.043228,
+    "stop_lon": -83.050394
+  },
+  {
+    "stop_id": "KENMCCS",
+    "stop_code": 3482,
+    "stop_name": "KENNY RD & MCCOY RD",
+    "stop_desc": "",
+    "stop_lat": 40.040292,
+    "stop_lon": -83.050605
+  },
+  {
+    "stop_id": "KENMILS",
+    "stop_code": 3484,
+    "stop_name": "KENNY RD & MILLCREEK LN",
+    "stop_desc": "",
+    "stop_lat": 40.036631,
+    "stop_lon": -83.050863
+  },
+  {
+    "stop_id": "NORCLEE",
+    "stop_code": 3488,
+    "stop_name": "W NORTH BROADWAY & CLEARVIEW AVE",
+    "stop_desc": "",
+    "stop_lat": 40.02873,
+    "stop_lon": -83.045614
+  },
+  {
+    "stop_id": "NORSHAE",
+    "stop_code": 3489,
+    "stop_name": "W NORTH BROADWAY & SHATTUCK AVE",
+    "stop_desc": "",
+    "stop_lat": 40.029015,
+    "stop_lon": -83.042568
+  },
+  {
+    "stop_id": "NORENTE",
+    "stop_code": 3490,
+    "stop_name": "W NORTH BROADWAY & RIVERSIDE HOSP",
+    "stop_desc": "",
+    "stop_lat": 40.029301,
+    "stop_lon": -83.034629
+  },
+  {
+    "stop_id": "OLEUNIS",
+    "stop_code": 3491,
+    "stop_name": "OLENTANGY RIVER RD & UNION CEMETERY",
+    "stop_desc": "",
+    "stop_lat": 40.027108,
+    "stop_lon": -83.027846
+  },
+  {
+    "stop_id": "REYRIDSW",
+    "stop_code": 3522,
+    "stop_name": "REYNOLDSBURG PARK & RIDE",
+    "stop_desc": "2100 BIRCHVIEW DR & REYNOLDSBURG P & R",
+    "stop_lat": 39.939285,
+    "stop_lon": -82.827489
+  },
+  {
+    "stop_id": "OLELANN",
+    "stop_code": 3524,
+    "stop_name": "OLENTANGY RIVER RD & W LANE AVE",
+    "stop_desc": "",
+    "stop_lat": 40.007262,
+    "stop_lon": -83.022953
+  },
+  {
+    "stop_id": "OLE3440S",
+    "stop_code": 3662,
+    "stop_name": "3440 OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.029064,
+    "stop_lon": -83.029427
+  },
+  {
+    "stop_id": "NOREXIW",
+    "stop_code": 3825,
+    "stop_name": "W NORTH BROADWAY & RIVERSIDE EXIT",
+    "stop_desc": "",
+    "stop_lat": 40.029556,
+    "stop_lon": -83.035658
+  },
+  {
+    "stop_id": "LIVBERE",
+    "stop_code": 3866,
+    "stop_name": "E LIVINGSTON AVE & BERKLEY RD",
+    "stop_desc": "E LIVINGSTON AVE & BERKELEY RD",
+    "stop_lat": 39.948967,
+    "stop_lon": -82.956645
+  },
+  {
+    "stop_id": "HIG18TS",
+    "stop_code": 3957,
+    "stop_name": "N HIGH ST & E 18TH AVE",
+    "stop_desc": "",
+    "stop_lat": 40.002899,
+    "stop_lon": -83.008719
+  },
+  {
+    "stop_id": "LIVBRIW",
+    "stop_code": 4025,
+    "stop_name": "E LIVINGSTON AVE & BRICE RD",
+    "stop_desc": "",
+    "stop_lat": 39.942184,
+    "stop_lon": -82.830486
+  },
+  {
+    "stop_id": "LIVLATE",
+    "stop_code": 4063,
+    "stop_name": "E LIVINGSTON AVE & LATTIMER DR",
+    "stop_desc": "",
+    "stop_lat": 39.9441,
+    "stop_lon": -82.867046
+  },
+  {
+    "stop_id": "HIGRICN",
+    "stop_code": 4085,
+    "stop_name": "S HIGH ST & E RICH ST",
+    "stop_desc": "",
+    "stop_lat": 39.957314,
+    "stop_lon": -82.999596
+  },
+  {
+    "stop_id": "HIGSTANN",
+    "stop_code": 4087,
+    "stop_name": "S HIGH ST & E STATE ST",
+    "stop_desc": "",
+    "stop_lat": 39.959836,
+    "stop_lon": -83.000015
+  },
+  {
+    "stop_id": "HIGNATN",
+    "stop_code": 4092,
+    "stop_name": "N HIGH ST & E NATIONWIDE BLVD",
+    "stop_desc": "",
+    "stop_lat": 39.968227,
+    "stop_lon": -83.001755
+  },
+  {
+    "stop_id": "HIGOHIN",
+    "stop_code": 4094,
+    "stop_name": "N HIGH ST & OHIO CENTER WAY",
+    "stop_desc": "N HIGH ST & E NATIONWIDE BLVD",
+    "stop_lat": 39.96987,
+    "stop_lon": -83.002013
+  },
+  {
+    "stop_id": "HIGSPRUN",
+    "stop_code": 4095,
+    "stop_name": "N HIGH ST & SPRUCE ST",
+    "stop_desc": "",
+    "stop_lat": 39.972747,
+    "stop_lon": -83.002579
+  },
+  {
+    "stop_id": "HIGSWANS",
+    "stop_code": 4096,
+    "stop_name": "N HIGH ST & SWAN ST",
+    "stop_desc": "N HIGH ST & W SWAN ST",
+    "stop_lat": 39.973099,
+    "stop_lon": -83.00285
+  },
+  {
+    "stop_id": "LIVQUAE",
+    "stop_code": 4097,
+    "stop_name": "E LIVINGSTON AVE & QUARRY RIDGE DR",
+    "stop_desc": "",
+    "stop_lat": 39.942963,
+    "stop_lon": -82.841065
+  },
+  {
+    "stop_id": "HIGNATS",
+    "stop_code": 4100,
+    "stop_name": "N HIGH ST & W NATIONWIDE BLVD",
+    "stop_desc": "N HIGH ST & @ W NATIONWIDE BLVD",
+    "stop_lat": 39.968182,
+    "stop_lon": -83.001838
+  },
+  {
+    "stop_id": "HIGLONS",
+    "stop_code": 4101,
+    "stop_name": "N HIGH ST & W LONG ST",
+    "stop_desc": "N HIGH ST & E LONG ST",
+    "stop_lat": 39.965157,
+    "stop_lon": -83.001322
+  },
+  {
+    "stop_id": "HIGTOWS",
+    "stop_code": 4106,
+    "stop_name": "S HIGH ST & W TOWN ST",
+    "stop_desc": "",
+    "stop_lat": 39.958095,
+    "stop_lon": -82.999953
+  },
+  {
+    "stop_id": "HIGMOUS",
+    "stop_code": 4109,
+    "stop_name": "S HIGH ST & W MOUND ST",
+    "stop_desc": "",
+    "stop_lat": 39.954153,
+    "stop_lon": -82.999185
+  },
+  {
+    "stop_id": "LIVSARW",
+    "stop_code": 4111,
+    "stop_name": "E LIVINGSTON AVE & SARANAC DR",
+    "stop_desc": "",
+    "stop_lat": 39.942456,
+    "stop_lon": -82.835749
+  },
+  {
+    "stop_id": "OLE2825N",
+    "stop_code": 4204,
+    "stop_name": "2825 OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.018477,
+    "stop_lon": -83.023723
+  },
+  {
+    "stop_id": "LIV3RDE",
+    "stop_code": 4211,
+    "stop_name": "E LIVINGSTON AVE & S 3RD ST",
+    "stop_desc": "",
+    "stop_lat": 39.952724,
+    "stop_lon": -82.996294
+  },
+  {
+    "stop_id": "EWMHARN",
+    "stop_code": 4231,
+    "stop_name": "EDWARD WEAVER MEMORIAL & HARLEY DR",
+    "stop_desc": "J EDWARD WEAVER MEMORIAL DR & HARLEY DR",
+    "stop_lat": 40.020472,
+    "stop_lon": -83.024937
+  },
+  {
+    "stop_id": "OLEBURN",
+    "stop_code": 4350,
+    "stop_name": "OLENTANGY RIVER RD & BURNBRAE AVE",
+    "stop_desc": "2620 OLENTANGY RIVER RD & BURNBRAE AVE",
+    "stop_lat": 40.014478,
+    "stop_lon": -83.022271
+  },
+  {
+    "stop_id": "OLE3420N",
+    "stop_code": 4417,
+    "stop_name": "3420 OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.029275,
+    "stop_lon": -83.029277
+  },
+  {
+    "stop_id": "OLERIVN",
+    "stop_code": 4453,
+    "stop_name": "OLENTANGY RIVER RD & RIVERVIEW",
+    "stop_desc": "OLENTANGY RIVER RD & RIVERVIEW DR",
+    "stop_lat": 40.024336,
+    "stop_lon": -83.025947
+  },
+  {
+    "stop_id": "LIVMCNW",
+    "stop_code": 4667,
+    "stop_name": "E LIVINGSTON AVE & MCNAUGHTEN RD",
+    "stop_desc": "",
+    "stop_lat": 39.942626,
+    "stop_lon": -82.838039
+  },
+  {
+    "stop_id": "GODCHEW",
+    "stop_code": 4911,
+    "stop_name": "GODOWN RD & CHEVIOT DR",
+    "stop_desc": "",
+    "stop_lat": 40.060216,
+    "stop_lon": -83.050996
+  },
+  {
+    "stop_id": "LIVALUW",
+    "stop_code": 4928,
+    "stop_name": "E LIVINGSTON AVE & ALUM CREEK DR",
+    "stop_desc": "",
+    "stop_lat": 39.948562,
+    "stop_lon": -82.945938
+  },
+  {
+    "stop_id": "LIV18TW",
+    "stop_code": 4929,
+    "stop_name": "E LIVINGSTON AVE & S 18TH ST",
+    "stop_desc": "",
+    "stop_lat": 39.950827,
+    "stop_lon": -82.977497
+  },
+  {
+    "stop_id": "GODCAMN",
+    "stop_code": 4930,
+    "stop_name": "GODOWN RD & CAMBRIAN DR",
+    "stop_desc": "",
+    "stop_lat": 40.06201,
+    "stop_lon": -83.054974
+  },
+  {
+    "stop_id": "BETDIEW",
+    "stop_code": 5131,
+    "stop_name": "BETHEL RD & DIERKER RD",
+    "stop_desc": "",
+    "stop_lat": 40.064425,
+    "stop_lon": -83.075519
+  },
+  {
+    "stop_id": "EASOFFW",
+    "stop_code": 5142,
+    "stop_name": "EASTGREEN BLVD & OFFICEVIEW PL",
+    "stop_desc": "",
+    "stop_lat": 39.938459,
+    "stop_lon": -82.829
+  },
+  {
+    "stop_id": "HIGOHIS",
+    "stop_code": 5208,
+    "stop_name": "N HIGH ST & OHIO CENTER WAY",
+    "stop_desc": "",
+    "stop_lat": 39.970186,
+    "stop_lon": -83.002323
+  },
+  {
+    "stop_id": "RESSAWE",
+    "stop_code": 5216,
+    "stop_name": "RESLER DR & SAWMILL RD",
+    "stop_desc": "",
+    "stop_lat": 40.067851,
+    "stop_lon": -83.091564
+  },
+  {
+    "stop_id": "PICBETS",
+    "stop_code": 5217,
+    "stop_name": "PICKFORDE DR & BETHEL RD",
+    "stop_desc": "",
+    "stop_lat": 40.065959,
+    "stop_lon": -83.086596
+  },
+  {
+    "stop_id": "BETDIEE",
+    "stop_code": 5218,
+    "stop_name": "BETHEL RD & DIERKER RD",
+    "stop_desc": "",
+    "stop_lat": 40.064184,
+    "stop_lon": -83.07436
+  },
+  {
+    "stop_id": "BETCOAW",
+    "stop_code": 5224,
+    "stop_name": "BETHEL RD & COACHMAN RD",
+    "stop_desc": "",
+    "stop_lat": 40.064626,
+    "stop_lon": -83.0817
+  },
+  {
+    "stop_id": "BETWOOE",
+    "stop_code": 5225,
+    "stop_name": "BETHEL RD & WOOD RUN BLVD",
+    "stop_desc": "",
+    "stop_lat": 40.064408,
+    "stop_lon": -83.080785
+  },
+  {
+    "stop_id": "BETMCKW",
+    "stop_code": 5606,
+    "stop_name": "BETHEL RD & MCKITRICK BLVD",
+    "stop_desc": "",
+    "stop_lat": 40.064282,
+    "stop_lon": -83.07086
+  },
+  {
+    "stop_id": "BETBETW",
+    "stop_code": 5607,
+    "stop_name": "BETHEL RD & BETHEL PARK DR",
+    "stop_desc": "",
+    "stop_lat": 40.064509,
+    "stop_lon": -83.078202
+  },
+  {
+    "stop_id": "BETOLGE",
+    "stop_code": 5608,
+    "stop_name": "BETHEL RD & OLGATE LN",
+    "stop_desc": "",
+    "stop_lat": 40.064068,
+    "stop_lon": -83.070427
+  },
+  {
+    "stop_id": "BETHEDE",
+    "stop_code": 5609,
+    "stop_name": "BETHEL RD & HEDGEROW RD",
+    "stop_desc": "",
+    "stop_lat": 40.0643,
+    "stop_lon": -83.077475
+  },
+  {
+    "stop_id": "BETREEW",
+    "stop_code": 5750,
+    "stop_name": "BETHEL RD & REED RD",
+    "stop_desc": "",
+    "stop_lat": 40.064207,
+    "stop_lon": -83.067336
+  },
+  {
+    "stop_id": "BETPORW",
+    "stop_code": 5751,
+    "stop_name": "BETHEL RD & PORTLAND ST",
+    "stop_desc": "",
+    "stop_lat": 40.064002,
+    "stop_lon": -83.062532
+  },
+  {
+    "stop_id": "BETREEE",
+    "stop_code": 5771,
+    "stop_name": "BETHEL RD & REED RD",
+    "stop_desc": "",
+    "stop_lat": 40.06389,
+    "stop_lon": -83.06603
+  },
+  {
+    "stop_id": "BETPORE",
+    "stop_code": 5772,
+    "stop_name": "BETHEL RD & PORTLAND ST",
+    "stop_desc": "",
+    "stop_lat": 40.063794,
+    "stop_lon": -83.061802
+  },
+  {
+    "stop_id": "BETGODW",
+    "stop_code": 5781,
+    "stop_name": "BETHEL RD & GODOWN RD",
+    "stop_desc": "",
+    "stop_lat": 40.06384,
+    "stop_lon": -83.057486
+  },
+  {
+    "stop_id": "HIGGAYN",
+    "stop_code": 5910,
+    "stop_name": "N HIGH ST & E LONG ST",
+    "stop_desc": "N HIGH ST & E GAY ST",
+    "stop_lat": 39.964424,
+    "stop_lon": -83.00096
+  },
+  {
+    "stop_id": "HIG9THN",
+    "stop_code": 5983,
+    "stop_name": "N HIGH ST & E 9TH AVE",
+    "stop_desc": "",
+    "stop_lat": 39.993254,
+    "stop_lon": -83.006599
+  },
+  {
+    "stop_id": "KENRUES",
+    "stop_code": 6039,
+    "stop_name": "KENNY RD & RUE DE FLEUR",
+    "stop_desc": "",
+    "stop_lat": 40.0309,
+    "stop_lon": -83.049521
+  },
+  {
+    "stop_id": "LIVMAYE",
+    "stop_code": 6091,
+    "stop_name": "E LIVINGSTON AVE & MAYFIELD PL",
+    "stop_desc": "",
+    "stop_lat": 39.94815,
+    "stop_lon": -82.941161
+  },
+  {
+    "stop_id": "OLEARGN",
+    "stop_code": 6351,
+    "stop_name": "OLENTANGY RIVER RD & ARGYLL ST",
+    "stop_desc": "",
+    "stop_lat": 40.012481,
+    "stop_lon": -83.02198
+  },
+  {
+    "stop_id": "OLEARGS",
+    "stop_code": 6352,
+    "stop_name": "OLENTANGY RIVER RD & ARGYLL ST",
+    "stop_desc": "",
+    "stop_lat": 40.011504,
+    "stop_lon": -83.022319
+  },
+  {
+    "stop_id": "220OLEN",
+    "stop_code": 6353,
+    "stop_name": "2200 OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.009742,
+    "stop_lon": -83.022347
+  },
+  {
+    "stop_id": "RIVHOSW",
+    "stop_code": 6364,
+    "stop_name": "RIVERSIDE HOSPITAL",
+    "stop_desc": "CENTENNIAL DR",
+    "stop_lat": 40.032262,
+    "stop_lon": -83.032227
+  },
+  {
+    "stop_id": "HIGMOUN",
+    "stop_code": 6370,
+    "stop_name": "S HIGH ST & E MOUND ST",
+    "stop_desc": "",
+    "stop_lat": 39.954211,
+    "stop_lon": -82.998989
+  },
+  {
+    "stop_id": "HIGBRONN",
+    "stop_code": 6464,
+    "stop_name": "S HIGH ST & E BROAD ST",
+    "stop_desc": "",
+    "stop_lat": 39.961687,
+    "stop_lon": -83.000479
+  },
+  {
+    "stop_id": "GODBETS",
+    "stop_code": 6532,
+    "stop_name": "GODOWN RD & BETHEL RD",
+    "stop_desc": "",
+    "stop_lat": 40.06278,
+    "stop_lon": -83.056846
+  },
+  {
+    "stop_id": "SAWBETN",
+    "stop_code": 6580,
+    "stop_name": "SAWMILL RD & BETHEL RD",
+    "stop_desc": "",
+    "stop_lat": 40.066004,
+    "stop_lon": -83.093052
+  },
+  {
+    "stop_id": "OLE2825S",
+    "stop_code": 6778,
+    "stop_name": "2825 OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.018712,
+    "stop_lon": -83.024156
+  },
+  {
+    "stop_id": "2425BET",
+    "stop_code": 6845,
+    "stop_name": "2425 BETHEL RD",
+    "stop_desc": "",
+    "stop_lat": 40.064526,
+    "stop_lon": -83.084106
+  },
+  {
+    "stop_id": "OLERIVS1",
+    "stop_code": 6945,
+    "stop_name": "OLENTANGY RIVER RD & RIVERVIEW DR",
+    "stop_desc": "",
+    "stop_lat": 40.024316,
+    "stop_lon": -83.026198
+  },
+  {
+    "stop_id": "BETGRYSW",
+    "stop_code": 7089,
+    "stop_name": "BETHEL RD & GREYSTONE DR",
+    "stop_desc": "",
+    "stop_lat": 40.064933,
+    "stop_lon": -83.090337
+  },
+  {
+    "stop_id": "OLEHARS2",
+    "stop_code": 7128,
+    "stop_name": "OLENTANGY RIVER RD & HARLEY DR",
+    "stop_desc": "",
+    "stop_lat": 40.020425,
+    "stop_lon": -83.024769
+  },
+  {
+    "stop_id": "LIVCHEE",
+    "stop_code": 7157,
+    "stop_name": "E LIVINGSTON AVE & CHELSEA AVE",
+    "stop_desc": "",
+    "stop_lat": 39.94736,
+    "stop_lon": -82.925531
+  },
+  {
+    "stop_id": "LIVCARW",
+    "stop_code": 7175,
+    "stop_name": "E LIVINGSTON AVE & CARPENTER ST",
+    "stop_desc": "",
+    "stop_lat": 39.949977,
+    "stop_lon": -82.974898
+  },
+  {
+    "stop_id": "LIVBROW",
+    "stop_code": 7178,
+    "stop_name": "E LIVINGSTON AVE & BROWNING AVE",
+    "stop_desc": "",
+    "stop_lat": 39.947313,
+    "stop_lon": -82.922266
+  },
+  {
+    "stop_id": "LIVCHEW",
+    "stop_code": 7213,
+    "stop_name": "E LIVINGSTON AVE & CHELSEA AVE",
+    "stop_desc": "",
+    "stop_lat": 39.947494,
+    "stop_lon": -82.925709
+  },
+  {
+    "stop_id": "LIVSIMW1",
+    "stop_code": 7230,
+    "stop_name": "E LIVINGSTON AVE & SIMPSON DR",
+    "stop_desc": "",
+    "stop_lat": 39.944621,
+    "stop_lon": -82.8736
+  },
+  {
+    "stop_id": "HIGMAIS2",
+    "stop_code": 7257,
+    "stop_name": "S HIGH ST & W MAIN ST",
+    "stop_desc": "",
+    "stop_lat": 39.955576,
+    "stop_lon": -82.999492
+  },
+  {
+    "stop_id": "HIGPREN",
+    "stop_code": 7413,
+    "stop_name": "HIGH ST & PRESCOTT ST",
+    "stop_desc": "N HIGH ST & PRESCOTT ST",
+    "stop_lat": 39.980166,
+    "stop_lon": -83.004035
+  },
+  {
+    "stop_id": "LANHIGW",
+    "stop_code": 7536,
+    "stop_name": "W LANE AVE & N HIGH ST",
+    "stop_desc": "W LANE AVE & ALY",
+    "stop_lat": 40.006139,
+    "stop_lon": -83.010373
+  },
+  {
+    "stop_id": "HIGLANS",
+    "stop_code": 7537,
+    "stop_name": "N HIGH ST & W LANE AVE",
+    "stop_desc": "N HIGH ST & E LANE AVE",
+    "stop_lat": 40.00565,
+    "stop_lon": -83.009261
+  },
+  {
+    "stop_id": "LANNEIW",
+    "stop_code": 7538,
+    "stop_name": "W LANE AVE & NEIL AVE",
+    "stop_desc": "",
+    "stop_lat": 40.006269,
+    "stop_lon": -83.014143
+  },
+  {
+    "stop_id": "LANNEIE",
+    "stop_code": 7539,
+    "stop_name": "W LANE AVE & NEIL AVE",
+    "stop_desc": "",
+    "stop_lat": 40.006144,
+    "stop_lon": -83.013788
+  },
+  {
+    "stop_id": "LANTUTW",
+    "stop_code": 7541,
+    "stop_name": "W LANE AVE & TUTTLE PARK PL",
+    "stop_desc": "",
+    "stop_lat": 40.0064,
+    "stop_lon": -83.016767
+  },
+  {
+    "stop_id": "LANTUTE",
+    "stop_code": 7542,
+    "stop_name": "W LANE AVE & TUTTLE PARK PL",
+    "stop_desc": "",
+    "stop_lat": 40.006301,
+    "stop_lon": -83.01692
+  },
+  {
+    "stop_id": "LANOLEE",
+    "stop_code": 7545,
+    "stop_name": "W LANE AVE & OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.006508,
+    "stop_lon": -83.022794
+  },
+  {
+    "stop_id": "BETPICW",
+    "stop_code": 7546,
+    "stop_name": "BETHEL RD & PICKFORDE DR",
+    "stop_desc": "",
+    "stop_lat": 40.064843,
+    "stop_lon": -83.087054
+  },
+  {
+    "stop_id": "OLEACKS",
+    "stop_code": 7547,
+    "stop_name": "OLENTANGY RIVER RD & ACKERMAN RD",
+    "stop_desc": "",
+    "stop_lat": 40.015379,
+    "stop_lon": -83.022838
+  },
+  {
+    "stop_id": "OLEDODN",
+    "stop_code": 7548,
+    "stop_name": "OLENTANGY RIVER RD & DODRIDGE ST",
+    "stop_desc": "OLENTANGY RIVER RD & W DODRIDGE ST",
+    "stop_lat": 40.016977,
+    "stop_lon": -83.023101
+  },
+  {
+    "stop_id": "BROOLEW",
+    "stop_code": 8009,
+    "stop_name": "W NORTH BROADWAY & OLENTANGY RIVER RD",
+    "stop_desc": "",
+    "stop_lat": 40.029772,
+    "stop_lon": -83.032682
+  }
+]

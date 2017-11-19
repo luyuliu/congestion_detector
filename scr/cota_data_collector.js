@@ -1,5 +1,6 @@
 var moment = require('../node_modules/moment')
-
+var request = require('../node_modules/request');
+var GtfsRealtimeBindings = require('../node_modules/gtfs-realtime-bindings');
 function entityItem2geoJSON(item) {
   var locationPoint = {};
   locationPoint['type'] = 'Feature';
@@ -42,8 +43,6 @@ function featureCollection(feed) {
   return features;
 }
 
-var GtfsRealtimeBindings = require('../node_modules/gtfs-realtime-bindings');
-var request = require('../node_modules/request');
 
 var requestSettings = [{
     method: 'GET',
@@ -89,11 +88,13 @@ function collectTripFeed() {
           console.error(err);
         }
       });
+      return now;
     }
   });
 }
 
-collectTripFeed()
+module.exports.collectBusFeed=collectBusFeed
+module.exports.collectTripFeed=collectTripFeed
 /*
 var interval = setInterval(collectBusFeed, 60000);
 setTimeout(function () {

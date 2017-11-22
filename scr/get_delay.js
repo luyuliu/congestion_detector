@@ -1,9 +1,9 @@
 //exlusive for no.001
 var fs = require('fs')
+var csvWriter = require('csv-write-stream')
 
-
-var cota=require('./cota_data_collector.js')
-var waze=require('./waze_data_collector.js')
+var cota = require('./cota_data_collector.js')
+var waze = require('./waze_data_collector.js')
 
 var stopTimeSchedule = JSON.parse(fs.readFileSync('D:\\Luyu\\congestion_detector\\GTFS_sorted\\stop_times_aggregated.json', 'utf8')) //stop time schedules
 var stopInfo = JSON.parse(fs.readFileSync('D:\\Luyu\\congestion_detector\\GTFS_sorted\\stops_sorted.json', 'utf8')) //stops
@@ -21,13 +21,16 @@ function getSeconds(astring) { //parse the time in the stop_time schedule, retur
 function parseDelay(timestamp) {
     var tripFeed = JSON.parse(fs.readFileSync('D:\\Luyu\\data\\tripfeed\\tripfeed_' + timestamp + '.json', 'utf8')) //trip feed
     var tripFeedSorted = []
-    var delay = {}
+    var delay = []
+    var delay_list = []
 
     for (var i in stopInfo) {
         delay[stopInfo[i].stop_id] = {}
-        delay[stopInfo[i].stop_id]["delay_value"] = 0
+        delay[stopInfo[i].stop_id]["delay_value_raw"] = 0
+        delay[stopInfo[i].stop_id]["stop_code"] = stopInfo[i].stop_code
         delay[stopInfo[i].stop_id]["flag"] = false
         delay[stopInfo[i].stop_id]["location"] = [stopInfo[i].stop_lat, stopInfo[i].stop_lon]
+        delay[stopInfo[i].stop_id]["delay_value"] = 0
     }
 
     for (var i in tripFeed.features) {
@@ -38,20 +41,49 @@ function parseDelay(timestamp) {
                 var stopSequence = tripFeed.features[i].trip_update.stop_time_update[j].stop_sequence - 1 //the sequence of the current stop, minus one to snyc with the stopTimeSchedule
                 var realTime = getSeconds(new Date(tripFeed.features[i].trip_update.stop_time_update[j].arrival.time.low * 1000))
                 var scheduledTime = getSeconds(stopTimeSchedule[currentTripId][stopSequence].arrival_time)
-                delay[currentStopId].delay_value = realTime - scheduledTime
+                delay[currentStopId].delay_value_raw = realTime - scheduledTime
                 delay[currentStopId].flag = true
-
+                delay[currentStopId].delay_value = (realTime - scheduledTime)/60
             }
 
         }
     }
 
+    delay.sort(function (a, b) {
+        var textA = a.stop_code;
+        var textB = b.stop_code;
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    })
+
+    //var a=0;
+    for (var i in delay) {
+        delay_list.push(delay[i].delay_value)
+        //a++
+        //console.log(delay[i].delay_value, delay[i].stop_code,a)
+    }
+
+    var writer = csvWriter({
+        separator: ',',
+        newline: '\n',
+        headers: ['delay'],
+        sendHeaders: true
+    })
+    writer.pipe(fs.createWriteStream('D:/Luyu/data/delaycsv/delay_' + timestamp + '.csv'))
+    for (var i in delay_list) {
+        if (delay_list[i] < 0) {
+            writer.write(['0'])
+            continue;
+        }
+        writer.write([delay_list[i]])
+    }
+    writer.end()
+
     fs.writeFileSync('D:\\Luyu\\data\\tripfeeddelay\\delay_' + timestamp + '.json', JSON.stringify(delay))
 }
 
-function main_batch(){
-    var now=cota.collectTripFeed()
-    
+function main_batch() {
+    var now = cota.collectTripFeed()
+
     parseDelay(now)
 }
 

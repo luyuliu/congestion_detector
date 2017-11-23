@@ -55,7 +55,7 @@ var requestSettings = [{
     encoding: null
   }
 ]
-
+/*
 function collectBusFeed() {
   request(requestSettings[0], function (error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -71,7 +71,7 @@ function collectBusFeed() {
       });
     }
   });
-}
+}*/
 
 function collectTripFeed() {
   request(requestSettings[1], function (error, response, body) {
@@ -79,11 +79,12 @@ function collectTripFeed() {
       var collection = {};
       var now = Math.floor(new Date().getTime() / (1000 * 60)) * 60;
       collection.timegroup = now
+      console.log(now)
 
       var feed = GtfsRealtimeBindings.FeedMessage.decode(body);
       collection.features = feed.entity;
 
-      require('fs').writeFile('..\\data\\tripfeed\\tripfeed_' + now + '.json', JSON.stringify(collection), 'utf8', function (err) {
+      require('fs').writeFile('..\\..\\data\\tripfeed\\tripfeed_' + now + '.json', JSON.stringify(collection), 'utf8', function (err) {
         if (err) {
           console.error(err);
         }
@@ -92,16 +93,13 @@ function collectTripFeed() {
     }
   });
 }
-
+/*
 module.exports.collectBusFeed=collectBusFeed
-module.exports.collectTripFeed=collectTripFeed
+module.exports.collectTripFeed=collectTripFeed*/
 /*
 var interval = setInterval(collectBusFeed, 60000);
 setTimeout(function () {
   clearInterval(interval)
-}, 8.64e+7);
-
-var interval1 = setInterval(collectTripFeed, 60000);
-setTimeout(function () {
-  clearInterval(interval1)
 }, 8.64e+7);*/
+//collectTripFeed()
+var interval1 = setInterval(collectTripFeed, 60000);

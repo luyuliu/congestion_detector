@@ -43,7 +43,7 @@ function parseDelay(timestamp) {
                 var scheduledTime = getSeconds(stopTimeSchedule[currentTripId][stopSequence].arrival_time)
                 delay[currentStopId].delay_value_raw = realTime - scheduledTime
                 delay[currentStopId].flag = true
-                delay[currentStopId].delay_value = (realTime - scheduledTime)/60
+                delay[currentStopId].delay_value = (realTime - scheduledTime) / 60
             }
 
         }
@@ -62,6 +62,7 @@ function parseDelay(timestamp) {
         //console.log(delay[i].delay_value, delay[i].stop_code,a)
     }
 
+
     var writer = csvWriter({
         separator: ',',
         newline: '\n',
@@ -78,7 +79,7 @@ function parseDelay(timestamp) {
     }
     writer.end()
 
-    fs.writeFileSync('D:\\Luyu\\data\\tripfeeddelay\\delay_' + timestamp + '.json', JSON.stringify(delay))
+    //fs.writeFileSync('D:\\Luyu\\data\\tripfeeddelay\\delay_' + timestamp + '.json', JSON.stringify(delay))
 }
 
 function main_batch() {
@@ -89,5 +90,33 @@ function main_batch() {
 
 //main_batch();
 //var interval= setInterval(main_batch, 60000);
-parseDelay(1511118600)
+//parseDelay(1511118600)
 //cota.collectTripFeed()
+
+timestamp = 1511453160;
+/*for (var i = 0; i < 32 * 5; i++) {
+    parseDelay(timestamp)
+    console.log(timestamp)
+    timestamp += 60
+
+}*/
+/*
+for (var i = 0; i < 32 * 5; i++) {　　
+    (function (i) {
+        parseDelay(timestamp)
+        console.log(timestamp)
+        timestamp += 60
+    })(i);
+}*/
+
+
+var a=new Array()
+var count=5;
+var batch=32;
+for(var i=0;i<batch*count;i++){a.push(i)}
+a.forEach(function (item){
+    parseDelay(timestamp)
+    console.log(item)
+    timestamp += 60
+    if(item==count*batch-1){return}
+})

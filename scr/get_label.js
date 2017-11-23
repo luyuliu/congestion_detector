@@ -61,6 +61,7 @@ function parseWaze(timestamp) {
         headers: ['label'],
         sendHeaders: true
     })
+
     writer.pipe(fs.createWriteStream('D:/Luyu/data/labelcsv/label_' + timestamp + '.csv'))
     for (var i in label_list) {
         writer.write([label_list[i]])
@@ -71,4 +72,11 @@ function parseWaze(timestamp) {
     fs.writeFileSync('D:\\Luyu\\data\\roadnotificationslabel\\label_' + timestamp + '.json', JSON.stringify(delayLabel))
 }
 
-parseWaze(1511118600);
+timestamp=1511453160;
+var a=new Array()
+for(var i=0;i<32*5;i++){a.push(i)}
+a.forEach(function (item){
+    parseWaze(timestamp)
+    console.log(timestamp)
+    timestamp += 60
+})

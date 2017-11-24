@@ -5,12 +5,19 @@ import numpy as np
 
 
 input_shape = 211
-batch_size = 32
+epochs=250
+timestamp = 1511453040
+data_size=350
 
 model = Sequential()
-for i in range(5):
-    model.add(Dense(batch_size=batch_size, units=input_shape, activation='relu', use_bias=True,
+model.add(Dense(units=input_shape, activation='relu', use_bias=True,
                     kernel_initializer='random_uniform', bias_initializer='he_normal', input_dim=input_shape))
+model.add(normalization.BatchNormalization(axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, beta_initializer='zeros', gamma_initializer='ones',
+                                               moving_mean_initializer='zeros', moving_variance_initializer='ones', beta_regularizer=None, gamma_regularizer=None, beta_constraint=None, gamma_constraint=None))            
+
+for i in range(9):
+    model.add(Dense(units=input_shape, activation='relu', use_bias=True,
+                    kernel_initializer='random_uniform', bias_initializer='he_normal'))
     model.add(normalization.BatchNormalization(axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True, beta_initializer='zeros', gamma_initializer='ones',
                                                moving_mean_initializer='zeros', moving_variance_initializer='ones', beta_regularizer=None, gamma_regularizer=None, beta_constraint=None, gamma_constraint=None))
 
@@ -18,28 +25,26 @@ for i in range(5):
 sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='mean_squared_error', optimizer=sgd)
 
-timestamp = 1511453160
-# while(True):
-
-
-
-
 delays = np.loadtxt('D:/Luyu/data/delaycsv/delay_' +
                    str(timestamp) + '.csv', skiprows=1, unpack=True)
 labels = np.loadtxt('D:/Luyu/data/labelcsv/label_' +
                     str(timestamp) + '.csv', skiprows=1, unpack=True)
 
-for i in range(batch_size-1):
-    #delay= genfromtxt('D:/Luyu/data/delaycsv/delay_' + str(timestamp) + '.csv', delimiter=',',dtype=None)
-    #label= genfromtxt('D:/Luyu/data/labelcsv/label_' + str(timestamp) + '.csv', delimiter=',',dtype=None)
 
+i=0
+while i<data_size:
     timestamp += 60
-    delay = np.loadtxt('D:/Luyu/data/delaycsv/delay_' +
-                       str(timestamp) + '.csv', skiprows=1, unpack=True)
-    delays=np.vstack((delays, delay))
-    label = np.loadtxt('D:/Luyu/data/labelcsv/label_' +
-                       str(timestamp) + '.csv', skiprows=1, unpack=True)
-    labels=np.vstack((labels, label))
-
-#print(delays.shape,labels.shape)
-model.fit(delays, labels, epochs=10, batch_size=32)
+    try:
+        delay = np.loadtxt('D:/Luyu/data/delaycsv/delay_' +
+                        str(timestamp) + '.csv', skiprows=1, unpack=True)
+        delays=np.vstack((delays, delay))
+        label = np.loadtxt('D:/Luyu/data/labelcsv/label_' +
+                        str(timestamp) + '.csv', skiprows=1, unpack=True)
+        labels=np.vstack((labels, label))
+        i=i+1
+    except:
+        print("skip.")
+print(delays.shape,labels.shape,i)
+model.fit(delays, labels, epochs=epochs, batch_size=batch_size,verbose=0)
+path_model="D:\\Luyu\\data\\model.h5"
+model.save(path_model)

@@ -13,8 +13,8 @@ function getDistance(a, b, c, d, x, y) {
     return Math.max(dis1, dis2, dis3)
 }
 
-function justification(severity, distance){
-    var label_value=(severity+1)*(buffer-distance)*ratio/normalization
+function justification(severity, distance) {
+    var label_value = (severity + 1) * (buffer - distance) * ratio / normalization
     return label_value
 }
 
@@ -38,7 +38,7 @@ function parseWaze(timestamp) {
                 delayLabel[stopInfo[j].stop_id]["severity"] = jams[i].severity
                 delayLabel[stopInfo[j].stop_id]["flag"] = true
                 delayLabel[stopInfo[j].stop_id]["distance"] = dis
-                delayLabel[stopInfo[j].stop_id]["label_value"] = justification(jams[i].severity,dis)
+                delayLabel[stopInfo[j].stop_id]["label_value"] = justification(jams[i].severity, dis)
             }
         }
 
@@ -51,7 +51,9 @@ function parseWaze(timestamp) {
     })
 
     for (var i in delayLabel) {
-        if(delayLabel[i].label_value==undefined){delayLabel[i].label_value=0}
+        if (delayLabel[i].label_value == undefined) {
+            delayLabel[i].label_value = 0
+        }
         label_list.push(delayLabel[i].label_value)
     }
 
@@ -72,11 +74,19 @@ function parseWaze(timestamp) {
     fs.writeFileSync('D:\\Luyu\\data\\roadnotificationslabel\\label_' + timestamp + '.json', JSON.stringify(delayLabel))
 }
 
-timestamp=1511453160;
-var a=new Array()
-for(var i=0;i<32*5;i++){a.push(i)}
-a.forEach(function (item){
-    parseWaze(timestamp)
-    console.log(timestamp)
-    timestamp += 60
+timestamp = 1511453040;
+var a = new Array()
+var count=11;
+var batch=32;
+for (var i = 0; i < 11 * 32; i++) {
+    a.push(i)
+}
+a.forEach(function (item) {
+    try {
+        parseWaze(timestamp)
+        console.log(item)
+        timestamp += 60
+    } catch (err) {
+        timestamp += 60
+    }
 })

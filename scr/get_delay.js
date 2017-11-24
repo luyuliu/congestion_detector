@@ -93,7 +93,7 @@ function main_batch() {
 //parseDelay(1511118600)
 //cota.collectTripFeed()
 
-timestamp = 1511453160;
+timestamp = 1511453040;
 /*for (var i = 0; i < 32 * 5; i++) {
     parseDelay(timestamp)
     console.log(timestamp)
@@ -111,12 +111,18 @@ for (var i = 0; i < 32 * 5; i++) {　　
 
 
 var a=new Array()
-var count=5;
+var count=11;
 var batch=32;
 for(var i=0;i<batch*count;i++){a.push(i)}
 a.forEach(function (item){
+    try{
     parseDelay(timestamp)
     console.log(item)
     timestamp += 60
-    if(item==count*batch-1){return}
+}
+catch(err){
+    
+    timestamp += 60
+}
+
 })

@@ -6,8 +6,9 @@ import numpy as np
 
 input_shape = 211
 epochs=250
-timestamp = 1511453040
-data_size=350
+timestamp = 1511398860
+data_size=1362
+batch_size=32
 
 model = Sequential()
 model.add(Dense(units=input_shape, activation='relu', use_bias=True,
@@ -32,7 +33,7 @@ labels = np.loadtxt('D:/Luyu/data/labelcsv/label_' +
 
 
 i=0
-while i<data_size:
+while i<data_size-1:
     timestamp += 60
     try:
         delay = np.loadtxt('D:/Luyu/data/delaycsv/delay_' +
@@ -42,8 +43,10 @@ while i<data_size:
                         str(timestamp) + '.csv', skiprows=1, unpack=True)
         labels=np.vstack((labels, label))
         i=i+1
+        if i%100==0:
+            print(i)
     except:
-        print("skip.")
+        pass
 print(delays.shape,labels.shape,i)
 model.fit(delays, labels, epochs=epochs, batch_size=batch_size,verbose=0)
 path_model="D:\\Luyu\\data\\model.h5"

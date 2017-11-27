@@ -74,11 +74,13 @@ function parseWaze(timestamp) {
     fs.writeFileSync('D:\\Luyu\\data\\roadnotificationslabel\\label_' + timestamp + '.json', JSON.stringify(delayLabel))
 }
 
-timestamp = 1511453040;
+
 var a = new Array()
-var count=11;
-var batch=32;
-for (var i = 0; i < 11 * 32; i++) {
+var end=1511563020;
+var start=1511560920;
+
+timestamp = start;
+for (var i = 0; i < (end-start)/60; i++) {
     a.push(i)
 }
 a.forEach(function (item) {

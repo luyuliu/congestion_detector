@@ -9,8 +9,8 @@ model=load_model(path_model)
 
 input_shape = 211
 epochs=250
-timestamp = 1511453040
-data_size=350
+timestamp = 1511560920
+data_size=33
 
 delays = np.loadtxt('D:/Luyu/data/delaycsv/delay_' +
                    str(timestamp) + '.csv', skiprows=1, unpack=True)
@@ -33,6 +33,7 @@ while i<data_size:
         print("skip.")
 print(delays.shape,labels.shape,i)
 
+'''
 predicts=model.predict(x=delays, verbose=1)
 
 csvFile1 = open("D:\\Luyu\\data\\predict.csv","w",newline='')
@@ -43,3 +44,7 @@ writer2 = csv.writer(csvFile2)
 
 writer1.writerows(predicts)
 writer2.writerows(labels)
+
+'''
+score=model.evaluate(x=delays, y=labels,verbose=1)
+print(score)

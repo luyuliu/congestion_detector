@@ -31,6 +31,7 @@ function parseDelay(timestamp) {
         delay[stopInfo[i].stop_id]["flag"] = false
         delay[stopInfo[i].stop_id]["location"] = [stopInfo[i].stop_lat, stopInfo[i].stop_lon]
         delay[stopInfo[i].stop_id]["delay_value"] = 0
+        delay[stopInfo[i].stop_id]["j_archive"] = 99999
     }
 
     for (var i in tripFeed.features) {
@@ -41,9 +42,13 @@ function parseDelay(timestamp) {
                 var stopSequence = tripFeed.features[i].trip_update.stop_time_update[j].stop_sequence - 1 //the sequence of the current stop, minus one to snyc with the stopTimeSchedule
                 var realTime = getSeconds(new Date(tripFeed.features[i].trip_update.stop_time_update[j].arrival.time.low * 1000))
                 var scheduledTime = getSeconds(stopTimeSchedule[currentTripId][stopSequence].arrival_time)
+                if (delay[currentStopId].flag && delay[currentStopId].j_archive < j) {
+                    break;
+                }
                 delay[currentStopId].delay_value_raw = realTime - scheduledTime
                 delay[currentStopId].flag = true
                 delay[currentStopId].delay_value = (realTime - scheduledTime) / 60
+                delay[currentStopId].j_archive=j
             }
 
         }
@@ -82,11 +87,6 @@ function parseDelay(timestamp) {
     //fs.writeFileSync('D:\\Luyu\\data\\tripfeeddelay\\delay_' + timestamp + '.json', JSON.stringify(delay))
 }
 
-function main_batch() {
-    var now = cota.collectTripFeed()
-
-    parseDelay(now)
-}
 
 //main_batch();
 //var interval= setInterval(main_batch, 60000);
@@ -110,20 +110,21 @@ for (var i = 0; i < 32 * 5; i++) {　　
 }*/
 
 
-var a=new Array()
-var end=1511563020;
-var start=1511560920;
+var a = new Array()
+var end = 1511984280//1511822160;
+var start = 1511822160//1511398860;
 timestamp = start;
-for(var i=0;i<(end-start)/60;i++){a.push(i)}
-a.forEach(function (item){
-    try{
-    parseDelay(timestamp)
-    console.log(item)
-    timestamp += 60
+for (var i = 0; i < (end - start) / 60; i++) {
+    a.push(i)
 }
-catch(err){
-    
-    timestamp += 60
-}
+a.forEach(function (item) {
+    try {
+        parseDelay(timestamp)
+        console.log(item)
+        timestamp += 60
+    } catch (err) {
+
+        timestamp += 60
+    }
 
 })

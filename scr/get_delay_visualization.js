@@ -23,6 +23,9 @@ function parseDelay(timestamp) {
     var tripFeedSorted = []
     var delay = []
     var delay_list = []
+    var real_list = []
+    var schedule_list = []
+    var id=[]
 
     for (var i in stopInfo) {
         delay[stopInfo[i].stop_id] = {}
@@ -31,6 +34,9 @@ function parseDelay(timestamp) {
         delay[stopInfo[i].stop_id]["flag"] = false
         delay[stopInfo[i].stop_id]["location"] = [stopInfo[i].stop_lat, stopInfo[i].stop_lon]
         delay[stopInfo[i].stop_id]["delay_value"] = 0
+        delay[stopInfo[i].stop_id]["real_time"] = 0
+        delay[stopInfo[i].stop_id]["scheduled_time"] = 0
+        delay[stopInfo[i].stop_id]["stop_id"] = stopInfo[i].stop_id
     }
 
     for (var i in tripFeed.features) {
@@ -44,8 +50,10 @@ function parseDelay(timestamp) {
                 delay[currentStopId].delay_value_raw = realTime - scheduledTime
                 delay[currentStopId].flag = true
                 delay[currentStopId].delay_value = (realTime - scheduledTime) / 60
-            }
+                delay[currentStopId].real_time = realTime
+                delay[currentStopId].scheduled_time = scheduledTime
 
+            }
         }
     }
 
@@ -58,35 +66,33 @@ function parseDelay(timestamp) {
     //var a=0;
     for (var i in delay) {
         delay_list.push(delay[i].delay_value)
+        real_list.push(delay[i].real_time)
+        schedule_list.push(delay[i].scheduled_time)
+        id.push(delay[i].stop_id)
         //a++
         //console.log(delay[i].delay_value, delay[i].stop_code,a)
     }
 
-
     var writer = csvWriter({
         separator: ',',
         newline: '\n',
-        headers: ['delay'],
+        headers: ['id','delay','real',"schedule"],
         sendHeaders: true
     })
-    writer.pipe(fs.createWriteStream('D:/Luyu/data/delaycsv/delay_' + timestamp + '.csv'))
+
+    writer.pipe(fs.createWriteStream('D:/Luyu/data/delay_' + timestamp + '.csv'))
     for (var i in delay_list) {
         if (delay_list[i] < 0) {
-            writer.write(['0'])
+            writer.write([id[i],'0', real_list[i], schedule_list[i]])
             continue;
         }
-        writer.write([delay_list[i]])
+        writer.write([id[i],delay_list[i], real_list[i], schedule_list[i]])
     }
     writer.end()
 
     //fs.writeFileSync('D:\\Luyu\\data\\tripfeeddelay\\delay_' + timestamp + '.json', JSON.stringify(delay))
 }
 
-function main_batch() {
-    var now = cota.collectTripFeed()
-
-    parseDelay(now)
-}
 
 //main_batch();
 //var interval= setInterval(main_batch, 60000);
@@ -109,21 +115,5 @@ for (var i = 0; i < 32 * 5; i++) {　　
     })(i);
 }*/
 
-
-var a=new Array()
-var end=1511563020;
-var start=1511560920;
-timestamp = start;
-for(var i=0;i<(end-start)/60;i++){a.push(i)}
-a.forEach(function (item){
-    try{
-    parseDelay(timestamp)
-    console.log(item)
-    timestamp += 60
-}
-catch(err){
-    
-    timestamp += 60
-}
-
-})
+timestamp = 1511118600
+parseDelay(timestamp)

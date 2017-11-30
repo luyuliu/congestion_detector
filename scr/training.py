@@ -1,15 +1,24 @@
 from keras.models import Sequential
 from keras.layers import Dense, Activation, normalization,core
-from keras import optimizers
-import numpy as np
+from keras import optimizers,callbacks
+import numpy as 
+import csv
 
 
 input_shape = 211
-epochs = 250
+epochs = 500
 timestamp = 1511398860
-data_size = 5600
+data_size = 100
 batch_size = 32
 
+class LossHistory(callbacks.Callback):
+    def on_train_begin(self, logs={}):
+        self.losses = []
+
+    def on_batch_end(self, batch, logs={}):
+        self.losses.append(logs.get('loss'))
+
+history = LossHistory()
 model = Sequential()
 model.add(Dense(units=input_shape, activation='relu', use_bias=True,
                 kernel_initializer='random_uniform', bias_initializer='he_normal', input_dim=input_shape))
@@ -50,6 +59,15 @@ while i < data_size - 1:
     if i % 100 == 0:
         print(i)
 print(delays.shape, labels.shape, i)
-model.fit(delays, labels, epochs=epochs, batch_size=batch_size, verbose=0)
-path_model = "D:\\Luyu\\data\\model.h5"
+model.fit(delays, labels, epochs=epochs, batch_size=batch_size, verbose=1,callbacks=[history])
+
+
+
+path_model = "D:\\Luyu\\data\\model1.h5"
+path_history="D:\\Luyu\\data\\history.csv"
 model.save(path_model)
+
+
+with open(path_history,"w",newline="") as csvfile:
+    writer=csv.writer(csvfile)
+    writer.writerows(history.losses)

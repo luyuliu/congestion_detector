@@ -76,8 +76,8 @@ function parseWaze(timestamp) {
 
 
 var a = new Array()
-var end=1511984280;
-var start=1511822160;
+var end=1512074040;
+var start=1511984220;
 
 timestamp = start;
 for (var i = 0; i < (end-start)/60; i++) {

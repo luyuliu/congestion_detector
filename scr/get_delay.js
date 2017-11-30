@@ -111,8 +111,8 @@ for (var i = 0; i < 32 * 5; i++) {　　
 
 
 var a = new Array()
-var end = 1511984280//1511822160;
-var start = 1511822160//1511398860;
+var end = 1512074040//1511822160;
+var start = 1511984220//1511398860;
 timestamp = start;
 for (var i = 0; i < (end - start) / 60; i++) {
     a.push(i)

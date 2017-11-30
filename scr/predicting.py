@@ -9,8 +9,8 @@ model = load_model(path_model)
 print("loaded.")
 input_shape = 211
 epochs = 250
-timestamp = 1511822160
-data_size = 2700
+timestamp = 1512031920
+data_size = 695
 
 delays = np.loadtxt('D:/Luyu/data/delaycsv/delay_' +
                     str(timestamp) + '.csv', skiprows=1, unpack=True)

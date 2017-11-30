@@ -1,15 +1,15 @@
 from keras.models import Sequential
 from keras.layers import Dense, Activation, normalization,core
 from keras import optimizers,callbacks
-import numpy as 
+import numpy as np
 import csv
 
 
 input_shape = 211
 epochs = 500
 timestamp = 1511398860
-data_size = 100
-batch_size = 32
+data_size = 9850
+batch_size = 100
 
 class LossHistory(callbacks.Callback):
     def on_train_begin(self, logs={}):
@@ -59,15 +59,12 @@ while i < data_size - 1:
     if i % 100 == 0:
         print(i)
 print(delays.shape, labels.shape, i)
-model.fit(delays, labels, epochs=epochs, batch_size=batch_size, verbose=1,callbacks=[history])
+model.fit(delays, labels, epochs=epochs, verbose=1,callbacks=[history])
 
 
 
-path_model = "D:\\Luyu\\data\\model1.h5"
+path_model = "D:\\Luyu\\data\\model.h5"
 path_history="D:\\Luyu\\data\\history.csv"
 model.save(path_model)
 
-
-with open(path_history,"w",newline="") as csvfile:
-    writer=csv.writer(csvfile)
-    writer.writerows(history.losses)
+np.savetxt(path_history,history.losses,delimiter=',')

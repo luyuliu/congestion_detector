@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Visualization</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="./library/leaflet.css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	    crossorigin="anonymous"></script>
+	<script src="./library/leaflet.js"></script>
+	<script src="./library/leaflet-heat.js"></script>
+	<script src="./library/rangeslider.min.js"></script>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		html,
+		body {
+			height: 100%;
+			width: 99.8%;
+		}
+
+		#map {
+			height: 94%;
+			width: 100%;
+		}
+
+		#slider {
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<input id="slider" type="range" min="0" max="690" value="0">
+</body>
+</br>
+<b id="count">Time</b>
+<div id="map">
+</div>
+<script>
+	var map = L.map('map').setView([39.98, -83], 13);
+
+	L.tileLayer(
+		'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			id: 'mapbox.streets'
+		}).addTo(map);
+
+
+	$.get('http://geog-cura-pc5/STOPS.json', function (data) {
+		var newLayer = L.geoJson(null, {
+			pointToLayer: function (feature, latlng) {
+				return L.marker(latlng, {
+					icon: L.icon({
+						iconUrl: "./icon.png",
+						iconSize: [15, 15],
+						iconAnchor: [12, 28],
+						popupAnchor: [0, -25]
+					}),
+					title: feature.properties.StopId,
+					riseOnHover: true
+				});
+			},
+
+		})
+		newLayer.addData(data)
+		map.addLayer(newLayer)
+		return newLayer;
+	});
+
+
+	$('#slider').rangeslider({
+		polyfill: true,
+	});
+
+	var b;
+	var tag=true;
+	$(document).on('input', "#slider", function (e) {
+		if(!tag){
+			map.removeLayer(heat)
+		}
+		tag=false
+		var sequence = (e.currentTarget.value);
+		var timestamp = 1512034800 + sequence * 60
+		var a = new Date(timestamp * 1000)
+		document.getElementById("count").innerHTML = "Time: "+a+"     Timestamp: "+timestamp.toString()
+		$.ajax({
+			type: "GET",
+			url: "http://GEOG-CURA-PC5/roadnotification/rn" + timestamp.toString() + ".json",
+			dataType: "text",
+			success: function (adata) {
+				var data = JSON.parse(adata)
+				var datasets = []
+				for (var i in data.jams) {
+					var dataset = [(parseFloat(data["jams"][i].startLatitude) + parseFloat(data.jams[i].endLatitude)) / 2, (parseFloat(
+						data.jams[i].endLongitude) + parseFloat(data.jams[i].startLongitude)) / 2, parseFloat(data.jams[i].severity)*2]
+					datasets.push(dataset)
+				}
+				heat = L.heatLayer(datasets, {
+					radius: 25
+				}).addTo(map);
+			}
+		});
+
+	})
+</script>
+
+
+
+</body>
+
+</html>

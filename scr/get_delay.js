@@ -67,7 +67,7 @@ function parseDelay(timestamp) {
         //console.log(delay[i].delay_value, delay[i].stop_code,a)
     }
 
-
+/*
     var writer = csvWriter({
         separator: ',',
         newline: '\n',
@@ -82,9 +82,8 @@ function parseDelay(timestamp) {
         }
         writer.write([delay_list[i]])
     }
-    writer.end()
-
-    //fs.writeFileSync('D:\\Luyu\\data\\tripfeeddelay\\delay_' + timestamp + '.json', JSON.stringify(delay))
+    writer.end()*/
+    fs.writeFileSync('D:\\Luyu\\data\\delayjson\\delay_' + timestamp + '.json', JSON.stringify(delay))
 }
 
 
@@ -111,12 +110,18 @@ for (var i = 0; i < 32 * 5; i++) {　　
 
 
 var a = new Array()
-var end = 1512074040//1511822160;
+var end = 1512000000//1511822160;
 var start = 1511984220//1511398860;
 timestamp = start;
-for (var i = 0; i < (end - start) / 60; i++) {
+
+var BreakException = {};
+
+
+for (var i = 0; i < ((end - start) / 60)-1; i++) {
     a.push(i)
 }
+
+console.log(a)
 a.forEach(function (item) {
     try {
         parseDelay(timestamp)
@@ -126,5 +131,6 @@ a.forEach(function (item) {
 
         timestamp += 60
     }
-
+console.log(item)
+if (item === a.length-1) throw BreakException;
 })

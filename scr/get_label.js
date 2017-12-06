@@ -30,15 +30,18 @@ function parseWaze(timestamp) {
         delayLabel[stopInfo[i].stop_id]["distance"] = 10
         delayLabel[stopInfo[i].stop_id]["location"] = [stopInfo[i].stop_lat, stopInfo[i].stop_lon]
     }
+
     var jams = stopTimeSchedule.jams;
     for (var i in jams) {
         for (var j in stopInfo) {
             var dis = getDistance(jams[i].startLatitude, jams[i].startLongitude, jams[i].endLatitude, jams[i].endLongitude, stopInfo[j].stop_lat, stopInfo[j].stop_lon)
+            console.log(dis)
             if (dis < buffer && dis < delayLabel[stopInfo[j].stop_id]["distance"]) { //0.001388=200m
                 delayLabel[stopInfo[j].stop_id]["severity"] = jams[i].severity
                 delayLabel[stopInfo[j].stop_id]["flag"] = true
                 delayLabel[stopInfo[j].stop_id]["distance"] = dis
                 delayLabel[stopInfo[j].stop_id]["label_value"] = justification(jams[i].severity, dis)
+                //console.log(j)
             }
         }
 
@@ -49,6 +52,7 @@ function parseWaze(timestamp) {
         var textB = b.stop_code;
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     })
+    
 
     for (var i in delayLabel) {
         if (delayLabel[i].label_value == undefined) {
@@ -56,8 +60,8 @@ function parseWaze(timestamp) {
         }
         label_list.push(delayLabel[i].label_value)
     }
-
-    var writer = csvWriter({
+    //console.log(label_list)
+    /*var writer = csvWriter({
         separator: ',',
         newline: '\n',
         headers: ['label'],
@@ -68,10 +72,10 @@ function parseWaze(timestamp) {
     for (var i in label_list) {
         writer.write([label_list[i]])
     }
-    writer.end()
+    writer.end()*/
 
 
-    fs.writeFileSync('D:\\Luyu\\data\\roadnotificationslabel\\label_' + timestamp + '.json', JSON.stringify(delayLabel))
+    //fs.writeFileSync('D:\\Luyu\\data\\labeljson\\label_' + timestamp + '.json', JSON.stringify(delayLabel))
 }
 
 
@@ -80,13 +84,14 @@ var end=1512074040;
 var start=1511984220;
 
 timestamp = start;
-for (var i = 0; i < (end-start)/60; i++) {
+/*for (var i = 0; i < (end-start)/60; i++) {
     a.push(i)
-}
+}*/
+a=[0,1,2,3,4,5,6,7]
 a.forEach(function (item) {
     try {
         parseWaze(timestamp)
-        console.log(item)
+        //console.log(item)
         timestamp += 60
     } catch (err) {
         timestamp += 60

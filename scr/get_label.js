@@ -32,10 +32,11 @@ function parseWaze(timestamp) {
     }
 
     var jams = stopTimeSchedule.jams;
+    var alerts = stopTimeSchedule.alerts;
     for (var i in jams) {
         for (var j in stopInfo) {
             var dis = getDistance(jams[i].startLatitude, jams[i].startLongitude, jams[i].endLatitude, jams[i].endLongitude, stopInfo[j].stop_lat, stopInfo[j].stop_lon)
-            console.log(dis)
+            //console.log(dis)
             if (dis < buffer && dis < delayLabel[stopInfo[j].stop_id]["distance"]) { //0.001388=200m
                 delayLabel[stopInfo[j].stop_id]["severity"] = jams[i].severity
                 delayLabel[stopInfo[j].stop_id]["flag"] = true
@@ -44,15 +45,30 @@ function parseWaze(timestamp) {
                 //console.log(j)
             }
         }
-
     }
 
+    //console.log("Done")
+    for (var i in alerts) {
+        for (var j in stopInfo) {
+            var latx = (alerts[i].latitude - stopInfo[j].stop_lat) * (alerts[i].latitude - stopInfo[j].stop_lat)
+            var lony = (alerts[i].longitude - stopInfo[j].stop_lon) * (alerts[i].longitude - stopInfo[j].stop_lon)
+            var dis = Math.sqrt(latx + lony)
+            if (dis < buffer && dis < delayLabel[stopInfo[j].stop_id]["distance"]) { //0.001388=200m
+                delayLabel[stopInfo[j].stop_id]["severity"] = 1
+                delayLabel[stopInfo[j].stop_id]["flag"] = true
+                delayLabel[stopInfo[j].stop_id]["distance"] = dis
+                delayLabel[stopInfo[j].stop_id]["label_value"] = justification(1, dis)
+                //console.log(j)
+            }
+        }
+    }
+    //console.log("Done")
     delayLabel.sort(function (a, b) {
         var textA = a.stop_code;
         var textB = b.stop_code;
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     })
-    
+
 
     for (var i in delayLabel) {
         if (delayLabel[i].label_value == undefined) {
@@ -61,39 +77,40 @@ function parseWaze(timestamp) {
         label_list.push(delayLabel[i].label_value)
     }
     //console.log(label_list)
-    /*var writer = csvWriter({
+    var writer = csvWriter({
         separator: ',',
         newline: '\n',
         headers: ['label'],
         sendHeaders: true
     })
 
-    writer.pipe(fs.createWriteStream('D:/Luyu/data/labelcsv/label_' + timestamp + '.csv'))
+    writer.pipe(fs.createWriteStream('D:\\Luyu\\data\\labelcsv_withalerts\\label_' + timestamp + '.csv'))
     for (var i in label_list) {
         writer.write([label_list[i]])
     }
-    writer.end()*/
-
-
+    writer.end()
+    
     //fs.writeFileSync('D:\\Luyu\\data\\labeljson\\label_' + timestamp + '.json', JSON.stringify(delayLabel))
 }
 
 
 var a = new Array()
-var end=1512074040;
-var start=1511984220;
+var end = 1512076200;
+var start = 1511398860;
 
 timestamp = start;
-/*for (var i = 0; i < (end-start)/60; i++) {
+for (var i = 0; i < (end - start) / 60; i++) {
     a.push(i)
-}*/
-a=[0,1,2,3,4,5,6,7]
+}
+
 a.forEach(function (item) {
-    try {
+    
+    
+    //try {
+    console.log(item)
         parseWaze(timestamp)
-        //console.log(item)
         timestamp += 60
-    } catch (err) {
-        timestamp += 60
-    }
+    //} catch (err) {
+     //   timestamp += 60
+    //}
 })
